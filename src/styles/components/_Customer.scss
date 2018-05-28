@@ -1,0 +1,78 @@
+.Review {
+margin: 40px 0;
+background: #fafafa;
+
+&-content {
+
+  margin: 10px 0;
+
+
+  @include for-size(desktop-up){
+    margin-top: 25%;
+  }
+
+}
+&-Title {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #333333;
+
+
+}
+&-subTitle {
+display: none;
+  @include for-size(desktop-up) {
+      display: contents;
+  }
+}
+&-subTitleMob {
+  display: contents;
+  justify-content: center;
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}
+
+
+
+  &-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &-Customer {
+
+    padding: 45px 20px;
+    box-shadow: 0 0 2em grey;
+    background-color: white;
+  }
+
+  &-CustomerText {
+  margin: 10px 0;
+  line-height: 25px;
+  }
+
+&-CustomerProfile {
+  display: inline-flex;
+
+}
+&-CustomerNone {
+  display: none;
+  @include for-size(desktop-up) {
+    display: contents;
+    
+  }
+
+  }
+
+  &-CustomerImg {
+    width: 70px;
+    height: 70px;
+  }
+
+&-CustomerName {
+  font-weight: bolder;
+}
+
+
+}

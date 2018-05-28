@@ -1,0 +1,69 @@
+.Step {
+  background-color: #fafafa;
+  padding: 15px 0;
+
+  @include for-size(desktop-up) {
+    padding: 50px 0;
+  }
+
+//content 1
+&-content1 {
+  height: 10%;
+  //border: 1px solid red;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+@include for-size(desktop-up) {
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  }
+}
+
+&-title {
+  font-weight: 600;
+  color: $mainColor;
+  font-size: 20px;
+
+}
+
+&-subTitle {
+  margin-top: 20px;
+}
+//content 2
+&-content2 {
+  height: 50%;
+
+//  border: 1px solid blue;
+  @include for-size(desktop-up) {
+  height: 35%;
+  }
+}
+
+&-contentAsset {
+  margin-bottom: 20px;
+}
+
+&-imgContainer {
+  display: inline-flex;
+}
+&-img {
+
+  width: 20px;
+  height: 20px;
+
+}
+
+&-text {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+&-blueText {
+  color: $mainColor;
+  font-weight: 600;
+
+}
+
+
+}

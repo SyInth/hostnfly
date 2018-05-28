@@ -1,0 +1,47 @@
+
+
+.Services {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  color: white;
+  padding: 32px 0;
+
+  &-TitleContainer {
+    text-align: center;
+
+  }
+
+  &-Title {
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+  &-Container {
+    align-items: center;
+    padding: 40px 0;
+    @include for-size(tablet-portrait-up){
+      text-align: center;
+      margin-top: 40px;
+
+    }
+  }
+  &-ContainerRight {
+    text-align: right;
+    padding: 40px 0;
+    @include for-size(tablet-portrait-up){
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  &-Img {
+    width: 60px;
+  }
+
+  &-Text {
+    font-size: 15px;
+    font-weight: bolder;
+    @include for-size(tablet-portrait-up){
+      padding-top: 20px;
+    }
+  }
+}

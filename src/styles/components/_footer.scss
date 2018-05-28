@@ -1,0 +1,45 @@
+.Footer {
+  background: #333333;
+  color: white;
+font-size: 13px;
+line-height: 20px;
+
+  @include for-size(desktop-up) {
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+
+  &-logo {
+    width: 150px;
+
+  }
+&-social {
+  padding: 30px 0;
+
+}
+
+&-img {
+  margin: 0 20px;
+  height: 50px;
+}
+
+&-text {
+padding: 20px 0;
+}
+
+&-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+    &-list {
+      margin-top: 20px;
+    }
+
+    &-greyText {
+      color: #717171;
+
+    }
+
+}

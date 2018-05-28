@@ -1,0 +1,42 @@
+.Faq {
+margin: 10px 0;
+&-title {
+  font-size: 20px;
+  color: $mainColor;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 0;
+  @include for-size(desktop-up) {
+    font-size: 25px;
+  }
+}
+&-content {
+
+  border: 1px solid #eaeaea;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 0;
+  height: 5%;
+
+  &-imgContainer {
+    justify-content: flex-end;
+  }
+
+  &-text {
+    padding: 2px 5px;
+    color: #333333;
+    font-weight: 600;
+
+  }
+}
+&-blueText {
+  color: $mainColor;
+}
+&-contact {
+  line-height: 40px;
+  text-align: center;
+
+}
+}
